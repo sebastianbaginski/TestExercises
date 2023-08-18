@@ -16,7 +16,7 @@ public class Exercise1 {
 
     @Given("Użytkownik otwiera przeglądarkę oraz przechodzi do aplikacji MyStore")
     public void openApp() {
-        System.setProperty("webDriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        System.setProperty("webDriver.chrome.driver", "src/main/resources/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(url);
